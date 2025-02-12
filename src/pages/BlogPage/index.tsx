@@ -2,10 +2,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	BlogPageContainer,
 	GitHubContent,
+	ListPosts,
 	ProfileBio,
 	ProfileContainer,
 	ProfileContent,
 	ProfileHeader,
+	SearchContainer,
+	SearchForm,
+	SearchLabels,
 } from "./styles";
 import {
 	faArrowUpRightFromSquare,
@@ -13,6 +17,7 @@ import {
 	faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { PostCard } from "../../components/PostCard";
 
 export const BlogPage = () => {
 	return (
@@ -21,6 +26,7 @@ export const BlogPage = () => {
 				<img
 					src="https://github.com/brunoglara.png"
 					alt="Github profile image"
+                    
 				/>
 				<ProfileContent>
 					<ProfileHeader>
@@ -54,6 +60,22 @@ export const BlogPage = () => {
 					</GitHubContent>
 				</ProfileContent>
 			</ProfileContainer>
+  
+			<SearchContainer>
+				<SearchLabels>
+					<strong>Posts</strong>
+					<span>6 posts</span>
+				</SearchLabels>
+				<SearchForm>
+					<input type="text" placeholder="Search Posts" />
+				</SearchForm>
+			</SearchContainer>
+
+			<ListPosts>
+				<PostCard />
+				<PostCard />
+				<PostCard />
+			</ListPosts>
 		</BlogPageContainer>
 	);
 };
