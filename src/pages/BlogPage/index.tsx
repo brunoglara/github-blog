@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	BlogPageContainer,
-	GitHubContent,
+	GitHubContentBlog,
 	ListPosts,
 	ProfileBio,
 	ProfileContainer,
@@ -44,7 +44,7 @@ export const BlogPage = () => {
 						egestas. Eu viverra massa quam dignissim aenean
 						malesuada suscipit. Nunc, volutpat pulvinar vel mass.
 					</ProfileBio>
-					<GitHubContent>
+					<GitHubContentBlog>
 						<div>
 							<FontAwesomeIcon icon={faGithub} />
 							<span>userName</span>
@@ -57,7 +57,7 @@ export const BlogPage = () => {
 							<FontAwesomeIcon icon={faUserGroup} />
 							<span>32 Followers</span>
 						</div>
-					</GitHubContent>
+					</GitHubContentBlog>
 				</ProfileContent>
 			</ProfileContainer>
   

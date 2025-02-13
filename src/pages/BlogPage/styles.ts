@@ -81,7 +81,7 @@ export const ProfileBio = styled.span`
 	line-height: 1.6;
 `;
 
-export const GitHubContent = styled.div`
+export const GitHubContentBlog = styled.div`
 	display: flex;
     align-items: center;
 
