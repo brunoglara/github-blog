@@ -33,12 +33,22 @@ export const PostCardContainer = styled(NavLink)`
 
 export const PostCardHeader = styled.div`
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	gap: 1rem;
 
 	strong {
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
 		font-size: 1.25rem;
 		line-height: 1.6;
+
+		max-height: calc(1.7rem * 2);
+		min-height: calc(1.6rem * 2);
+
 		color: ${(props) => props.theme.colors.baseTitle};
 	}
 
@@ -56,6 +66,7 @@ export const PostCardText = styled.span`
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	line-height: 1.5;
-	max-height: calc(1.5em * 4);
+	line-height: 1.6;
+	max-height: calc(1.7rem * 4);
+	min-height: calc(1.6rem * 4);
 `;

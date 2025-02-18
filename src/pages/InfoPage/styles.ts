@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const InfoPageContainer = styled.div`
 	display: flex;
@@ -36,9 +37,11 @@ export const InfoHeader = styled.header`
 	justify-content: space-between;
 
 	width: 100%;
+`;
 
-	> div {
-		display: flex;
+export const InfoLink = styled(NavLink)`
+
+    display: flex;
 		align-items: center;
 		gap: 0.5rem;
 
@@ -56,8 +59,8 @@ export const InfoHeader = styled.header`
 			line-height: 1.6;
 			font-weight: bold;
 		}
-	}
-`;
+
+`
 
 export const InfoTitle = styled.strong`
     margin-top: 1.25rem;
@@ -95,7 +98,7 @@ export const GitHubContentInfo = styled.div`
 	}
 `;
 
-export const PostContent = styled.section`
+export const PostContent = styled.div`
     max-width: 864px;
     width: 100%;
     height: auto;
@@ -106,7 +109,7 @@ export const PostContent = styled.section`
     color: ${(props) => props.theme.colors.baseText};
 
     
-    white-space: normal;
+    white-space: pre-wrap;
 
     a {
         color: ${(props) => props.theme.colors.blue};

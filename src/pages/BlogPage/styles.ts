@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const BlogPageContainer = styled.div`
@@ -54,7 +55,11 @@ export const ProfileHeader = styled.header`
 		color: ${(props) => props.theme.colors.baseTitle};
 	}
 
-	> div {
+`;
+
+export const ProfileGithubLink = styled(NavLink)`
+	text-decoration: none; /* Remove sublinhado padrão */
+		color: inherit; /* Mantém a cor do tema ou do pai */
 		display: flex;
 		align-items: center;
 		gap: 0.5rem;
@@ -73,8 +78,8 @@ export const ProfileHeader = styled.header`
 			line-height: 1.6;
 			font-weight: bold;
 		}
-	}
-`;
+
+`
 
 export const ProfileBio = styled.span`
 	margin-top: 0.5rem;
